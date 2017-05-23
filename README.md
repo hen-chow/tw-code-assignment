@@ -92,5 +92,8 @@ A file with the supplied test input and output info is saved in the application 
 ```
 
 ## Specifications
+* Problem Three: Merchant's Guide to galaxy
+* Language
+- Ruby
 * System dependencies
 - RSpec was used to develop test suite
