@@ -1,0 +1,26 @@
+require_relative "translator.rb"
+
+t = Translator.new
+
+t.check_input "glob is I"
+t.check_input "prok is V"
+t.check_input "pish is X"
+t.check_input "tegj is L"
+t.check_input "glob glob Silver is 34 Credits"
+t.check_input "glob prok Gold is 57800 Credits"
+t.check_input "pish pish Iron is 3910 Credits"
+
+puts t.check_input "how much is pish tegj glob glob ?"
+puts "Expected output: pish tegj glob glob is 42"
+puts t.check_input "how much is tegj pish pish prok glob ?"
+puts "Expected output: tegj pish pish prok glob is 76"
+puts t.check_input "how many Credits is glob prok Silver ?"
+puts "Expected output: glob prok Silver is 68 Credits"
+puts t.check_input "how many Credits is glob prok Gold ?"
+puts "Expected output: glob prok Gold is 57800 Credits"
+puts t.check_input "how many Credits is glob prok Iron ?"
+puts "Expected output: glob prok Iron is 782 Credits"
+puts t.check_input "how many Credits is prok glob glob Gold ?"
+puts "Expected output: prok glob glob Gold is 101150 Credits"
+puts t.check_input "how much wood could a woodchuck chuck if a woodchuck could chuck wood ?"
+puts "Expected output: I have no idea what you are talking about"
